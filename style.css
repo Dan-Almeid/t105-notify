@@ -1,3 +1,36 @@
 body{
     margin: 0;
+    display: grid;
+    grid-template-areas: 
+                        'nav nav nav nav'
+                        'header header header header'
+                        'section1 section1 section1 section1'
+                        'section2 section2 section2 section2'
+                        'section3 section3 section3 section3'
+                        'footer footer footer footer';
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2vh 60vh 40vh 40vh 40vh 30vh;
+}
+
+nav{
+    grid-area: nav;
+}
+header{
+    grid-area: header;
+}
+
+.section1{
+    grid-area: section1;
+}
+
+.section2{
+    grid-area: section2;
+}
+
+.section3{
+    grid-area: section3;
+}
+
+footer{
+    grid-area: footer;
 }
