@@ -73,7 +73,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 10px;
+    margin: 10px;
 }
 .iconheader:hover{
     background-color:#2dcc70;
@@ -112,6 +112,10 @@ header{
     padding: 20px;
     background-color: #2CCD70;
     border-radius: 50%;
+}
+
+.divsection1 img:hover{
+    background-color: gray;
 }
 
 
@@ -155,6 +159,11 @@ header{
    border-bottom-right-radius: 10px;
    border-top-right-radius: 10px;
   color: white;
+}
+.section2 div .button:hover{
+    background-color: grey;
+    color: #2CCD70;
+    transition: 2s;
 }
 .section2 iframe{
     margin: 20px;
@@ -239,3 +248,92 @@ footer a:hover{
 }
 
 /* fim footer */
+
+
+
+
+@media (max-width: 420px){
+    body{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 2vh 80vh 120vh 90vh 120vh 20vh;
+    }
+
+    /* inicio header */
+    .divheader{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .divheader p{
+        padding: 15px;
+        margin: 0;
+        width: 100%;
+    }
+    .iconesheader{
+        margin:0;
+    }
+    .banner{
+        display:none;
+    }
+    /* fim header */
+
+
+    /* section 1 */
+
+    .section1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .divsection1{
+        width: 100%;
+    }
+
+
+    /* sectioon 2 */
+
+    .section2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .forms{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .section2 .esquerdasection2{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    iframe{
+        width: 90%;
+        height: auto;
+    }
+    /* section 3 */
+
+    .p1{
+        margin: 0;
+        width: 100%;
+        padding: 30px;
+    }
+    .pessoas, footer{
+        display:flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .pessoas img{
+        margin: 2px;
+    }
+    /* fim section 3 */
+
+
+}
